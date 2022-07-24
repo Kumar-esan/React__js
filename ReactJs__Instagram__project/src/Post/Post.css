@@ -1,0 +1,35 @@
+.postpage__db {
+  width: 150px !important;
+  height: 140px !important;
+  border: none;
+}
+.postpage__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.postpage__list li {
+  margin-right: 20px;
+}
+hr {
+  margin: auto;
+  width: 900px;
+}
+.Postpage__Grid {
+  margin: 50px 0px;
+}
+/* ul {
+  display: flex;
+  flex-wrap: wrap;
+} */
+.post_map_container {
+  display: inline-block;
+}
+.post_ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+.post_ul li {
+  margin-right: 20px;
+}

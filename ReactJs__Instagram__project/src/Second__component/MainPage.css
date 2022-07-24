@@ -1,0 +1,32 @@
+.Card__container {
+  width: 101%;
+  background-color: white;
+  border: 1px solid #dbdddb;
+}
+ul {
+  padding-inline-start: 23px !important;
+}
+.MuiAvatar-root {
+  min-width: 20px;
+  min-height: 20px;
+  border: 3px solid #df3968;
+  margin: 0px 5px;
+}
+
+.Card_Right {
+  float: right;
+  font-size: 18px;
+  margin: 25px 30px;
+}
+.Card__container {
+  width: 500px;
+  background-color: white;
+  border: 1px solid #dbdddb;
+}
+
+@media only screen and (max-width: 900px) {
+  .Card__container {
+    width: 500px;
+  }
+}
+/* like_button */

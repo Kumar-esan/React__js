@@ -1,0 +1,29 @@
+body {
+  background-color: #fafafa;
+}
+.maincontent__container {
+  /* max-width: 47% !important; */
+  overflow-y: scroll;
+  max-height: 800px;
+}
+
+.maincontent__container::-webkit-scrollbar {
+  display: none;
+}
+
+.maincontent__container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.maincontent_followpage {
+  display: block;
+}
+@media only screen and (max-width: 900px) {
+  .maincontent_followpage {
+    display: none;
+  }
+  .maincontent__container {
+    max-width: 61% !important;
+    flex-basis: 90% !important;
+  }
+}

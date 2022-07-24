@@ -1,0 +1,27 @@
+.last_page {
+  padding-top: 10px;
+  list-style-type: none;
+  border: 1px solid #dfdfdf;
+  height: 50px;
+}
+.icons {
+  font-size: 30px;
+}
+.Comment__Search {
+  height: 33px;
+  outline: none;
+  border: white;
+  width: 103%;
+}
+.Comment__loop {
+  display: flex;
+  width: 100%;
+  margin-right: 12px;
+}
+.Comment__Grid {
+  width: 160% !important;
+}
+.Comment__Grid__Item2 {
+  font-weight: 100;
+  text-align: left !important;
+}

@@ -1,0 +1,27 @@
+.navbar__barContent {
+  position: fixed;
+  z-index: 30;
+  width: 100%;
+  height: 54px;
+  background-color: white;
+  border-bottom: 1px solid #dbdbdb;
+}
+.navbar_logo {
+  margin-top: 10px;
+}
+.navbar__img {
+  margin: 15px 15px;
+}
+.navbar__searchBar {
+  height: 35px;
+  width: 220px;
+  margin-top: 10px;
+  border: 1px solid #dbdbdb;
+  padding-left: 10px;
+  background-color: rgb(239, 239, 239);
+  border-radius: 5px;
+}
+.navbar__searchBar:focus {
+  outline: none;
+  border: 1px solid #bd9a9ab3;
+}
