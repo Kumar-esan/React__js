@@ -6,8 +6,7 @@ import Loginpage from "./first_component/Loginpage.js";
 import Postpage from "./Post/Postpage.js";
 class App extends React.Component {
   render() {
-    return (
-      <div className="App">
+    return (<div>
         <BrowserRouter>
           <div>
             <Routes>

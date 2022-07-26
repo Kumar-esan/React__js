@@ -142,13 +142,15 @@ function LoginPage() {
           <li>Instagram Lite</li>
           <li>Contact uploading and non-users</li>
         </ul>
-        <select>
-          <option>English</option>
-          <option>Spanish</option>
-          <option>tamil</option>
-          <option>telugu</option>
-        </select>{" "}
-        &nbsp; © 2022 Instagram from Meta <br />
+        <div className="Loginpage__language">
+          <select>
+            <option>English</option>
+            <option>Spanish</option>
+            <option>tamil</option>
+            <option>telugu</option>
+          </select>{" "}
+          &nbsp; © 2022 Instagram from Meta <br />
+        </div>
         <br />
       </div>
     </div>

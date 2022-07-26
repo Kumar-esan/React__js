@@ -19,7 +19,7 @@ function NavBar() {
           <Grid item xs={2}>
             {" "}
           </Grid>
-          <Grid item xs={1}>
+          <Grid item xs={2}>
             <img className="navbar_logo" src={insta_log} width="105px" />
           </Grid>
           <Grid item xs={5}>
@@ -30,7 +30,14 @@ function NavBar() {
             />
           </Grid>
           <Grid item xs={3} style={{ display: "flex" }}>
-            <img className="navbar__img" src={home} width="25px" />
+            <img
+              className="navbar__img"
+              src={home}
+              width="25px"
+              onClick={() => {
+                navigate("/Home");
+              }}
+            />
             <img className="navbar__img" src={message} width="25px" />
             <img className="navbar__img" src={find} width="25px" />
             <img

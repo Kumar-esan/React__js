@@ -6,6 +6,7 @@ export default function Like(props) {
   return (
     <div>
       <Heart
+        id={props.text}
         isActive={active}
         onClick={() => setActive(!active)}
         style={{ width: "25px" }}

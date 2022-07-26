@@ -5,12 +5,11 @@ import { Avatar } from "@material-ui/core";
 import { BsThreeDots } from "react-icons/bs";
 import { BiMessageRounded } from "react-icons/bi";
 import { TbBrandTelegram } from "react-icons/tb";
-import { AiOutlineHeart } from "react-icons/ai";
-import { MdOutlineBookmarkBorder } from "react-icons/md";
+// import { AiOutlineHeart } from "react-icons/ai";
+// import { MdOutlineBookmarkBorder } from "react-icons/md";
 import Like from "./Like.js";
 import Grid from "@material-ui/core/Grid";
 import useLocalStorage from "../Hooks/useLocalStorage.js";
-// import Like from "./Like.js";
 import Comment from "./Comment.js";
 import { AnimatedSocialIcon } from "react-animated-social-icons";
 export default function MainPage() {
@@ -25,13 +24,8 @@ export default function MainPage() {
       .then((data) => {
         const val = data.slice(5, 20);
         setStatusList(val);
-        //console.log(val);
-        //this.setState({ statusList: val });
       });
   }, []);
-  // useEffect(() => {
-  //   localStorage.setItem("items", JSON.stringify(array__New));
-  // }, [array__New]);
   const bookmarkChange = (val) => {
     if (array__New.indexOf(val) == -1) {
       array__New.push(val);
@@ -45,51 +39,9 @@ export default function MainPage() {
       console.log("dublicate vlaue is", val);
     }
   };
-  // const ChangeArray = () => {
-  //   const result = newArray.reduce((finalArray, current) => {
-  //     let obj = finalArray.find((item) => item.id === current.id);
-  //     // return the obt item = true
-  //     // underfined = flase
-  //     if (obj) {
-  //       return finalArray;
-  //     } else {
-  //       return finalArray.concat([current]);
-  //     }
-  //   }, []);
-  //   console.log("result ", result);
-  // };
-  // }
-  //  const bookmarkChange = (val) => {
-
-  //     console.log("val id is ", val);
-  //     this.setState({ newArray: [...this.state.newArray, { val }] });
-  //     //  console.log("the array vlaue is", this.state.newArray);
-  //     const Uniusers = [
-  //       ...this.state.newArray
-  //         .reduce((map, obj) => map.set(obj.id, obj), new Map())
-  //         .values(),
-  //     ];
-  //     console.log(Uniusers);
-  //     let obt = Uniusers[0].val;
-  //     console.log("obtt", obt);
-  //     if (val != obt) {
-  //       this.setState({ updateArray: [...this.state.updateArray, { obt }] });
-  //     }
-
-  //     // console.log("update", this.state.updateArray);
-  //     const realColors = this.state.updateArray.filter(function (e) {
-  //       return e != null;
-  //     });
-  //     console.log("real color", realColors);
-  //     var index = localStorage.length;
-  //     var Name = [];
-  //     localStorage.setItem(Name[index], JSON.stringify(realColors));
-  //   };
   return (
     <div className="MainPage-container">
       {statusList.map((item) => {
-        // const [value1, setvalue1] = useState(item.id);
-        //console.log(value1);
         return (
           <ul key={item.id}>
             <Card className="Card__container">
@@ -103,8 +55,7 @@ export default function MainPage() {
                       margin: "10px",
                     }}
                   >
-                    {" "}
-                    <Avatar src={item.avatar} className="MainPage__Top" />
+                    <></> <Avatar src={item.avatar} className="MainPage__Top" />
                     <div className="MainPage__Top"> {item.name}</div>
                   </p>
                   <BsThreeDots className="Card_Right" />
@@ -114,11 +65,11 @@ export default function MainPage() {
                 <br />
 
                 <Grid container style={{ fontSize: "30px", width: "150%" }}>
-                  <Grid xs={1}>
+                  <Grid item xs={1}>
                     {/* <AiOutlineHeart style={{ margin: "0px 10px" }} /> */}
-                    <Like Text={item.id} />
+                    <Like key={item.id} />
                   </Grid>
-                  <Grid xs={0}>
+                  <Grid item xs={0}>
                     <BiMessageRounded style={{ margin: "0px 10px" }} />
                   </Grid>
                   <Grid item xs={0}>
@@ -138,16 +89,6 @@ export default function MainPage() {
                         bookmarkChange(item);
                       }}
                     />
-                    {/* <MdOutlineBookmarkBorder
-                      onClick={() => {
-                        bookmarkChange(item);
-                      }}
-                    /> */}
-                    {/* <Bookmark
-                        className="coolClass"
-                        href="/cool/path"
-                        title="My Cool Website"
-                      /> */}
                   </Grid>
                 </Grid>
 

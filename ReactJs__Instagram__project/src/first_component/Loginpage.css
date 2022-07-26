@@ -105,6 +105,11 @@ body {
 .last_li li {
   margin: 10px;
 }
+
+.Loginpage__language {
+  text-align: center;
+}
+
 @media only screen and (max-width: 900px) {
   .loginpage__image {
     display: none;

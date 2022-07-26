@@ -5,6 +5,7 @@
   border: 1px solid #dbdddb;
   margin-top: 25px;
   display: flex;
+  z-index: -1;
   overflow-x: scroll;
   margin-bottom: 10px;
   margin-inline-start: 23px;
